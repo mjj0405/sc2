@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./js/libs/flexible.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span class="icon-sign"></span>
+            <div class="tab-wrap">
+                <span class="tab-item">书城</span>
+                <span class="tab-item">书架</span>
+                <div class="line"></div>
+            </div>
+            <span class="icon-person"></span>
+        </header>
+
+        <section class="content">
+            <div class="swiper-container wrap-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">书城</div>
+                    <div class="swiper-slide">书架</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main.js'], function() {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>
